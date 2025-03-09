@@ -28,7 +28,7 @@ table tr:nth-child(even){
 tr th{
     background-color: rgb(104, 215, 248);
 }
-table td:hover{
+table tr:hover{
     background-color: rgb(5, 130, 233);
     color: rgb(255, 255, 255);
 }
