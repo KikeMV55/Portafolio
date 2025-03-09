@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(190, 227, 238);
+}
+table{
+    width: 100%;
+    border: 2px solid rgb(131, 170, 184);
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    caption-side: top;
+    margin: auto;
+}
+th, td{
+    border: 2px solid rgb(131, 170, 184);
+}
+th{
+    padding: 1%;
+}
+td{
+    padding: 0.6%;
+    text-align: justify;
+}
+table tr:nth-child(odd){
+    background-color: rgb(104, 172, 190);
+}
+table tr:nth-child(even){
+    background-color: rgb(130, 214, 240);
+}
+tr th{
+    background-color: rgb(104, 215, 248);
+}
+table td:hover{
+    background-color: rgb(5, 130, 233);
+    color: rgb(255, 255, 255);
+}
