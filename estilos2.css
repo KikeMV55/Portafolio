@@ -1,0 +1,20 @@
+ul{
+    list-style-type: none; /*Elimina las viñetas*/
+    width: 20%;background-color: rgb(131, 189, 189);
+    margin: 0%;
+    padding: 0%;
+}
+li a{
+    display: block; /*Aplica formato de bloque(No solo el texto)*/
+    background-color: rgb(131, 189, 189);
+    padding: 6%;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+li a:hover{
+    background-color:  rgb(39, 156, 156);
+}
+li a.activo{
+    background-color: rgb(49, 105, 105);
+}
