@@ -1,0 +1,44 @@
+ul{
+    list-style-type: none; /*Elimina las viñetas*/
+    width: 20%;background-color: rgb(131, 189, 189);
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    background-color: rgb(131, 189, 189);
+    position: fixed; /*La ul esta fija*/
+    overflow: auto;  /*Barra de desplazamiento*/
+}
+li a{
+    display: block; /*Aplica formato de bloque(No solo el texto)*/
+    background-color: rgb(131, 189, 189);
+    padding: 6%;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+li a:hover{
+    background-color:  rgb(39, 156, 156);
+}
+li a.activo{
+    background-color: rgb(49, 105, 105);
+}.capa1{
+    margin-left: 22%;
+    padding: 10px;
+}
+@font-face{
+    font-family: "fuente1";
+    src: url("Fuentes/Mulish/Mulish-VariableFont_wght.ttf") format("truetype");
+}
+p{
+    text-align: justify;
+    font-family: fuente1;
+}
+h1{
+    font-family: "Big Shoulders", sans-serif;
+}
+h2{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 150%;
+}
