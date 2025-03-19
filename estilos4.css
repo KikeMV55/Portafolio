@@ -1,0 +1,106 @@
+ul {
+    list-style-type: none;
+    width: 20%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #ab3333;
+    border-right: 4px solid #611d1d; /* Solo borde derecho */
+   /* z-index: 500; /* Para que esté por debajo del header */
+}
+
+header {
+    width: 100%;
+    height: 13%;
+    background-color: #ab3333;
+    min-height: 80px;/*Altura mínima*/
+    border-bottom: 4px solid #611d1d; /* Solo borde inferior */
+   /* z-index: 1000; /* Para que esté por encima del ul */
+    display: flex; /*Permite ajustar los elementos dentro de un contendor*/
+    justify-content: space-between; /* Distribuir los botones equitativamente y el logo a la izquierda*/
+    align-items: center; /*Alinea verticalmente los elementos*/
+    padding: 0 4%; /* Espacio en los laterales */
+    box-sizing: border-box;
+}
+
+.logo {
+    padding: 0%;
+    width: 10%;
+}
+
+.taquito, .cartel {
+    width: 100%;
+    padding: 0%;
+   /* box-sizing: border-box;*/
+}
+.taquito{
+    margin-top: 192%;
+}
+.buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: center;
+    
+}
+.grande{
+    display: flex;
+    height: 100%;
+}
+
+#bis, #bre {
+    width: auto; /* Ancho automático */
+    background-color: #892f2f;
+    color: white;
+    font-size: 120%;
+    border: none;
+    border-radius: 14%;
+    padding: 10px 20px; /* Ajustamos el padding para que no sea tan grande */
+    margin: 0; /* Quitamos el margen para que estén juntos */
+}
+
+#bis:hover, #bre:hover {
+    cursor: pointer;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0%;
+}
+.capa1{
+    margin: 0%;
+    background-image: url(imgs/fondo.png);
+    width: 80%;
+    float: left;
+    position: relative;
+}
+table{
+    width: 100%;
+    border: 2px saddlebrown solid;
+}
+table img{
+    width: 100%;
+}
+table tr{
+    width: 50%;
+}
+table td{
+    align-items: center;
+    padding: 2%;
+}
+table figcaption{
+    text-align: center;
+    font-weight: 700px;
+}
+#menu{
+    width: 50%;
+    background-color: #ab3333;
+    border: none;
+	border-radius: 4px; /* Redondear bordes */
+	padding: 1%;
+	margin: auto;
+	box-sizing: border-box; /* Ajustar al contenedor */
+	margin-bottom: 1%;
+	margin-top: 1%;
+    margin-left: 25%;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
