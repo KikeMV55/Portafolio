@@ -105,7 +105,6 @@ table figcaption{
     cursor: pointer;
 }
 .pie{
-    width: 100%;
     display: flex;
     background-color: #ab3333;
     color: white;
