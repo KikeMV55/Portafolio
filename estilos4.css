@@ -104,3 +104,10 @@ table figcaption{
     font-size: larger;
     cursor: pointer;
 }
+.pie{
+    width: 100%;
+    display: flex;
+    background-color: #ab3333;
+    color: white;
+    padding: 1%;
+}
