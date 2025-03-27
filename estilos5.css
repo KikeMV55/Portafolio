@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.encabezado{
+    padding: 5%;
+    background-color: rgb(185, 181, 176);
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+.contenido{
+    display: flex;
+    flex-direction: space-between;
+    flex: 1;
+}
+.caja{
+    flex: 1;
+    border: 1px solid lightgray;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px rgba(100, 120, 90, 0.5);
+}
+.pie{
+    padding: 2%;
+    background-color: rgb(185, 181, 176);
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+@media(max-width:500px){
+    .contenido{
+        flex-direction: column;
+    }
+}
