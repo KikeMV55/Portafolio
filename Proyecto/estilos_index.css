@@ -1,0 +1,116 @@
+/*Para toda la página*/
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+#logo{
+	padding: 5%;
+}
+
+.encabezado{
+    width: 100%;
+	height: 13vh;
+    background-color: #dfd3c3;
+    display: flex; /*Permite ajustar los elementos dentro de un contendor*/
+    justify-content: center; /* Distribuir los botones equitativamente y el logo a la izquierda*/
+    align-items: center; /*Alinea verticalmente los elementos*/
+    box-sizing: border-box;
+}
+
+.caja{
+	display: flex;
+    height: 100%;
+}
+
+.lista{
+	list-style-type: none;
+	height: 100%;  /* Ocupará el 100% de .caja */
+    width: 15%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #dfd3c3;
+	display: flex;          /* Activa Flexbox */
+	flex-direction: column; /* Apila los elementos verticalmente */
+	justify-content: space-evenly; /* Distribuye el espacio uniformemente */
+}
+
+.lista a{
+	display: block;
+	background-color: #dfd3c3;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #8d493a;
+	text-align: center;
+}
+
+.enlaces a:hover{
+	background-color: #8d493a;
+	color: #dfd3c3;
+}
+
+.activo a{
+	display: block;
+	background-color: #8d493a;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #dfd3c3;
+}
+
+.central{
+	background-color: #f8ede3;
+	height: 100%;  /* Misma altura que .lista */
+	margin: 0%;
+    width: 100%;
+    float: left;
+    position: relative;
+	overflow-y: auto; /* Scroll si el contenido es largo */
+}
+
+.prueba{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.banner{
+	width: 100%;
+}
+
+.central h1{
+	margin-top: 5%;
+	text-align: center;
+	color: #853726;
+}
+
+.destacado{
+	width: 35%;
+	margin-left: 10%;
+	margin-top: 5%;
+	margin-bottom: 5%;	
+}
+
+/*Pie de página*/
+.pie{
+	width: 100%;
+	height: auto;
+	background-color: #8d493a;
+}
+
+.pie table{
+	padding: 1%;
+	text-align: center;
+	font-size: 15px;
+	color: #dfd3c3;
+}
+.pie table tr td{
+	width: 50%;
+}
