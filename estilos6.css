@@ -1,0 +1,51 @@
+.contenedor{
+    position: relative;
+    background-color: gray;
+    height: 100px;
+}
+
+.caja1{
+    position: relative;
+    background-color: orange;
+    height: 50px;
+    left: 10px; /* Dezplaza como si feura un margen pero no del todo */
+}
+
+.caja2{
+    position: absolute; /* Lo puedes mover, es decir, lo puedes colocar donde quieras*/
+    background-color: rgb(125, 125, 226);
+    height: 150px;
+    width: 50px;
+    left: 50px;
+    top: 25px;
+    z-index: -1;
+}
+
+.caja3{
+    position: absolute;
+    background-color: pink;
+    width: 125px;
+    height: 125px;
+    right: 100px;
+    top: 40px;
+    z-index: 2;
+}
+
+.caja4{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(194, 194, 97);
+    top: 55px;
+    right: 55px;
+    z-index: 3;
+}
+
+.caja5{
+    position: fixed; /* Permanece fijo */
+    width: 100px;
+    right: 0px;
+    bottom: 0px;
+    border: 2px solid red;
+    z-index: 4;
+}
