@@ -1,0 +1,214 @@
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+    padding: 0;
+}
+
+/* Tipografía */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #2874a6;
+    color: #f8f9fa;
+    padding: 32px 0;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.encabezado h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Sección teórica */
+.seccion-teoria {
+    margin-bottom: 48px;
+}
+
+.seccion-teoria h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #2874a6;
+    font-size: 29px;
+}
+
+.contenedor-teoria {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.tarjeta-teoria {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    width: 584px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.tarjeta-teoria h3 {
+    color: #3498db;
+    margin-bottom: 13px;
+    font-size: 21px;
+}
+
+/* Sección de ejemplos */
+.seccion-ejemplos {
+    margin-bottom: 48px;
+}
+
+.seccion-ejemplos h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #2874a6;
+    font-size: 29px;
+}
+
+.ejemplos-basicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f8f9fa;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+}
+
+.ejemplo-px {
+    background-color: #3498db;
+    width: 200px;
+    height: 200px;
+}
+
+.ejemplo-em {
+    background-color: #5dade2;
+    width: 160px; /* 10em basado en 16px */
+    height: 160px;
+}
+
+.ejemplo-rem {
+    background-color: #4d9fcc;
+    width: 160px; /* 10rem basado en 16px */
+    height: 160px;
+}
+
+.ejemplo-porcentaje {
+    background-color: #6bb9e0;
+    width: 50%;
+    height: 150px;
+}
+
+.ejemplo-vw {
+    background-color: #89c4f4;
+    width: 20vw;
+    height: 15vh;
+}
+
+.ejemplo-vh {
+    background-color: #a4d0f0;
+    width: 15vw;
+    height: 10vh;
+}
+
+/* Sección visual */
+.seccion-visual {
+    margin-bottom: 48px;
+}
+
+.seccion-visual h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #2874a6;
+    font-size: 29px;
+}
+
+.contenedor-visual {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.caja-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f9fa;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.caja-visual span {
+    background-color: rgba(0,0,0,0.6);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.caja-pixel {
+    width: 150px;
+    height: 150px;
+    background-color: #2c82c9;
+}
+
+.caja-em {
+    width: 160px; /* 10em basado en 16px */
+    height: 80px; /* 5em */
+    background-color: #3c8dbc;
+}
+
+.caja-rem {
+    width: 160px; /* 10rem basado en 16px */
+    height: 80px; /* 5rem */
+    background-color: #4aa3df;
+}
+
+.caja-porcentaje {
+    width: 50%;
+    height: 100px;
+    background-color: #5dade2;
+}
+
+.caja-vw {
+    width: 25vw;
+    height: 100px;
+    background-color: #6bb9e0;
+}
+
+.caja-vh {
+    width: 200px;
+    height: 10vh;
+    background-color: #89c4f4;
+}
