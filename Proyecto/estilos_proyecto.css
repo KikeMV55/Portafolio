@@ -10,7 +10,11 @@ html, body{
 	height: 100%;
 }
 
-header{
+#logo{
+	padding: 5%;
+}
+
+.encabezado{
     width: 100%;
 	height: 13vh;
     background-color: #dfd3c3;
@@ -22,7 +26,7 @@ header{
 
 .caja{
 	display: flex;
-    height: calc(100% - 13vh); /* Resta la altura del header */
+    height: 100%;
 }
 
 .lista{
@@ -65,10 +69,16 @@ header{
 	background-color: #f8ede3;
 	height: 100%;  /* Misma altura que .lista */
 	margin: 0%;
-    width: 85%;
+    width: 100%;
     float: left;
     position: relative;
 	overflow-y: auto; /* Scroll si el contenido es largo */
+}
+
+.prueba{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .banner{
