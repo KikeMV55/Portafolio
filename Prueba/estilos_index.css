@@ -220,6 +220,10 @@ h1 {
     .menu-toggle:checked ~ .barra-lateral {
         transform: translateX(0); /* Vuelve a su posición original */
     }
+
+    .menu-toggle:checked ~ .menu-button {
+        transform: translateX(-150%); /* Vuelve a su posición original */
+    }
     
     /* Desplaza el contenido al abrir el menú */
     .menu-toggle:checked ~ .contenido-principal {
