@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 1%;
+    margin: 0%;
+}
+
+body{
+    background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+.btn{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 43%;
+    width: 14%;
+    background-color: rgb(53, 82, 211);
+    color: white;
+    border: 3px solid rgb(53, 82, 211);
+    border-radius: 2%;
+    font-size: 90%;
+}
+
+.contenedor{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.galeria{
+    height: 100%;
+    width: 20%;
+    border: 3px solid rgb(53, 82, 211);
+    padding: 0%;
+    border-radius: 2%;
+    visibility: visible;
+}
+
+.btn:hover + .contenedor .galeria {
+    visibility: hidden;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
