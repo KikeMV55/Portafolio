@@ -1,274 +1,262 @@
 /* ===== RESET Y ESTILOS BASE ===== */
 * {
-    box-sizing: border-box; /* Evita problemas con padding y bordes */
-    padding: 0; /* Elimina rellenos por defecto */
-    margin: 0; /* Elimina márgenes por defecto */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html, body {
-    height: 100%; /* Ocupa toda la altura de la pantalla */
+    height: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Fuente principal */
+                 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f8ede3; /* Color de fondo beige claro */
-    color: #853726; /* Color de texto principal (marrón rojizo) */
-
+    background-color: #f8ede3;
+    color: #853726;
 }
 
 /* ===== ESTRUCTURA PRINCIPAL ===== */
 .contenedor {
-    display: flex; /* Usa Flexbox para diseño flexible */
-    flex-direction: column; /* Organiza elementos en columna */
-    min-height: 100vh; /* Altura mínima = 100% del viewport */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* ===== ENCABEZADO FIJO (Barra superior) ===== */
+/* ===== ENCABEZADO FIJO ===== */
 .encabezado {
-    height: 13vh; /* Altura del 13% de la pantalla */
-    background-color: #dfd3c3; /* Color de fondo */
-    position: fixed; /* Fija la barra en la parte superior */
-    top: 0; /* Pegado arriba */
-    left: 0; /* Pegado a la izquierda */
-    width: 100%; /* Ancho completo */
-    z-index: 90; /* Capa de apilamiento (encima del contenido pero debajo del menú móvil) */
+    height: 13vh;
+    background-color: #dfd3c3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 90;
 }
 
-/* ===== BARRA LATERAL FIJA (Menú de navegación) ===== */
+/* ===== BARRA LATERAL ===== */
 .barra-lateral {
-    background-color: #dfd3c3; /* Mismo color que el encabezado */
-    width: 15%; /* Ancho fijo */
-    position: fixed; /* Fija la barra lateral */
-    height: calc(100vh); /* Altura = 100% del viewport menos el encabezado */
-    left: 0; /* Pegada a la izquierda */
-    transition: transform 0.3s ease; /* Animación suave al abrir/cerrar en móvil */
-    z-index: 95; /* Capa de apilamiento (encima del encabezado) */
-    overflow-y: auto; /* Permite scroll si el menú es muy largo */
+    background-color: #dfd3c3;
+    width: 15%;
+    position: fixed;
+    height: calc(100vh);
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 95;
+    overflow-y: auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-/* Logo en la barra lateral */
 .logo-container {
-    padding: 5%; /* Espaciado interno */
-    text-align: center; /* Centra el logo */
-    margin-bottom: 1rem; /* Espacio entre logo y menú */
+    padding: 5%;
+    text-align: center;
+    margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
 .logo {
-    max-width: 100%; /* Ajusta el logo al ancho del contenedor */
-    height: auto; /* Mantiene la proporción */
+    max-width: 100%;
+    height: auto;
 }
 
-/* Estilos del menú */
 .menu {
-    list-style-type: none; /* Quita los bullets de la lista */
-    display: flex; /* Usa Flexbox */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    gap: 1.1rem; /* Espacio entre enlaces */
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
 }
 
-/* Enlaces del menú */
 .menu a {
-    display: block; /* Hace que ocupen todo el ancho */
-    padding: 10%; /* Espaciado interno */
-    text-decoration: none; /* Quita el subrayado */
-    font-size: 120%; /* Tamaño de fuente */
-    color: #8d493a; /* Color del texto */
-    text-align: center; /* Centra el texto */
-    transition: all 0.3s ease; /* Efecto hover suave */
+    display: block;
+    padding: 10%;
+    text-decoration: none;
+    font-size: 120%;
+    color: #8d493a;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-/* Efecto hover en enlaces */
 .enlaces a:hover {
-    background-color: #8d493a; /* Fondo marrón oscuro */
-    color: #dfd3c3; /* Texto claro */
+    background-color: #8d493a;
+    color: #dfd3c3;
 }
 
-/* Enlace activo (página actual) */
 .activo a {
-    background-color: #8d493a; /* Fondo marrón oscuro */
-    color: #dfd3c3; /* Texto claro */
+    background-color: #8d493a;
+    color: #dfd3c3;
 }
 
-/* ===== CONTENIDO PRINCIPAL (Área desplazable) ===== */
+/* ===== CONTENIDO PRINCIPAL ===== */
 .contenido-principal {
-    margin-left: 15%; /* Deja espacio para la barra lateral */
-    margin-top: 13vh; /* Deja espacio para el encabezado fijo */
-    flex: 1; /* Ocupa todo el espacio restante */
-    transition: margin 0.3s ease; /* Animación suave al abrir/cerrar menú en móvil */
+    margin-left: 15%;
+    margin-top: 13vh;
+    flex: 1;
+    transition: transform 0.3s ease;
 }
 
-/* Estilos del contenido central */
-
-
-/* Banner principal */
+/* ===== CONTENIDO CENTRAL ===== */
 .banner {
-    width: 100%; /* Ancho completo */
-    height: auto; /* Altura automática (mantiene proporción) */
-    display: block; /* Elimina espacio extra debajo de la imagen */
-    margin-bottom: 3%; /* Espacio inferior */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 3%;
 }
 
-/* Título principal */
 h1 {
-    text-align: center; /* Centrado */
-    color: #853726; /* Color marrón rojizo */
-    margin: 3% 0; /* Espaciado superior e inferior */
-    font-size: 1.8rem; /* Tamaño de fuente relativo */
+    text-align: center;
+    color: #853726;
+    margin: 3% 0;
+    font-size: 1.8rem;
 }
 
-/* Galería de imágenes */
 .galeria {
-    display: flex; /* Usa Flexbox */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
-    justify-content: center; /* Centra horizontalmente */
-    gap: 15%; /* Espacio entre imágenes */
-    margin: 5% 5%; /* Espaciado superior e inferior */
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15%;
+    margin: 5% 5%;
 }
 
-/* Imágenes destacadas */
 .destacado {
-    max-width: 35%; /* No más ancho que su contenedor */
-    height: auto; /* Altura proporcional */
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-
+    max-width: 35%;
+    height: auto;
+    flex: 1 1 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== PIE DE PÁGINA ===== */
 .pie-pagina {
-    background-color: #8d493a; /* Fondo marrón oscuro */
-    color: #dfd3c3; /* Texto claro */
+    background-color: #8d493a;
+    color: #dfd3c3;
     padding: 1%;
 }
 
-/* Contenedor flexible para el footer */
 .footer-contenido {
-    display: flex; /* Usa Flexbox */
-    flex-wrap: wrap; /* Permite ajuste en móviles */
-    justify-content: space-around; /* Distribuye el espacio */
-    max-width: 100%; /* Ancho máximo */
-    margin: 0 auto; /* Centrado */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-/* Columnas del footer */
 .footer-columna {
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    flex: 1 1 300px;
 }
 
-/* Títulos del footer */
 .footer-columna h3 {
-    margin-bottom: 1%; /* Espaciado inferior */
-    font-size: 1rem; /* Tamaño de fuente */
+    margin-bottom: 1%;
+    font-size: 1rem;
     text-align: center;
 }
 
-.footer-columna p{
-    font-size: 0.9rem; /* Tamaño de fuente */
+.footer-columna p {
+    font-size: 0.9rem;
     text-align: center;
 }
 
-/* ===== DISEÑO RESPONSIVO (Móviles y tablets) ===== */
-
-/* Botón del menú móvil (oculto en desktop) */
+/* ===== DISEÑO RESPONSIVO ===== */
 .menu-toggle {
-    display: none; /* Oculta el checkbox */
+    display: none;
     height: 100%;
 }
 
 .menu-button {
     height: 10vh;
     width: 10vh;
-    display: none; /* Oculto por defecto (se muestra solo en móviles) */
-    position: fixed; /* Posición fija */
-    top: 1.5vh; /* Distancia desde arriba */
-    left: 1.5vh; /* Distancia desde la izquierda */
-    z-index: 100; /* Encima de todo */
-    background: #8d493a; /* Fondo marrón oscuro */
-    color: white; /* Texto blanco */
-    border: none; /* Sin borde */
-    font-size: 100%; /* Tamaño del icono ☰ */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar */
+    display: none;
+    position: fixed;
+    top: 1.5vh;
+    left: 1.5vh;
+    z-index: 100;
+    background: #8d493a;
+    color: white;
+    border: none;
+    font-size: 100%;
+    border-radius: 4px;
+    cursor: pointer;
     text-align: center;
-    line-height: 10vh; /* Igual que el height para centrar verticalmente */
+    line-height: 10vh;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    backface-visibility: hidden;
 }
 
-/* Media query para tablets y móviles (hasta 768px) */
 @media (max-width: 1080px) {
     .menu-button {
-        display: block; /* Muestra el botón ☰ */
+        display: block;
     }
     
-    /* Oculta la barra lateral por defecto en móviles */
     .barra-lateral {
-        transform: translateX(-100%); /* Mueve el menú fuera de la pantalla */
-        top: 0; /* Ahora ocupa toda la altura */
+        transform: translateX(-100%);
+        top: 0;
         left: 0;
-        height: 100%;
-        z-index: 98; /* Capa de apilamiento (debajo del botón pero encima del contenido) */
+        height: 100vh;
+        z-index: 98;
         width: 100%;
-        transition: transform 0.1s ease; /* Movido aquí para consistencia */
-        -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
-        overscroll-behavior: contain; /* Evita que el contenido principal se desplace */
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
-    .logo-container{
-        width: 50%;
-        margin-left: 25%;
+    .barra-lateral::-webkit-scrollbar {
+        display: none;
+    }
+
+    .barra-lateral > * {
+        width: 100vw;
+        flex-shrink: 0;
+    }
+
+    .logo-container {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
     
-    
-    /* Elimina el margen izquierdo en móvil */
     .contenido-principal {
         margin-left: 0;
-        width: 100%; /* Aseguramos ancho completo */
-        transition: transform 0.1s ease; /* Cambiado de margin a transform */
+        width: 100%;
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     
-    /* Muestra el menú al hacer clic en ☰ */
     .menu-toggle:checked ~ .barra-lateral {
-        transform: translateX(0); /* Vuelve a su posición original */
+        transform: translateX(0);
     }
 
+    .menu-toggle:checked ~ .contenido-principal{
+        transform: translateX(100%);
+
+    }
     .menu-toggle:checked ~ .menu-button {
-        transform: translateX(0); /* Vuelve a su posición original */
+        transform: translateX(0);
     }
     
-    /* Desplaza el contenido al abrir el menú */
-    .menu-toggle:checked ~ .contenido-principal {
-        transform: translateX(100%); /* Nuevo sistema de desplazamiento */
-        width: auto; /* Eliminado width: 0vh que causaba problemas */
-        overflow: hidden; /* Evita scroll durante la animación */
-        height: 100vh; /* Fija altura */
+    .menu-toggle:not(:checked) ~ .menu-button {
+        transform: translateX(0) !important;
     }
     
-    /* Ajustes de tipografía para móviles */
     h1 {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
-        padding: 0 10px; /* Pequeño espaciado lateral */
+        font-size: 1.5rem;
+        padding: 0 10px;
     }
     
-    /* Cambia la galería a columna en móviles */
     .galeria {
         flex-direction: column;
-        align-items: center; /* Centra las imágenes */
+        align-items: center;
+        gap: 5%;
     }
     
-    /* Ajusta el tamaño de las imágenes en móvil */
     .destacado {
-        width: 80%; /* 90% del ancho del contenedor */
-        max-width: 400px; /* Máximo 400px de ancho */
+        width: 90%;
+        max-width: 400px;
         margin-bottom: 5%;
     }
 
     html {
-        overflow-x: hidden; /* Elimina scroll horizontal fantasma */
+        overflow-x: hidden;
     }
 }
