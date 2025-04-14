@@ -210,9 +210,11 @@ h1 {
     .barra-lateral {
         transform: translateX(-100%); /* Mueve el menú fuera de la pantalla */
         top: 0; /* Ahora ocupa toda la altura */
+        left: 0;
         height: 100vh;
         z-index: 98; /* Capa de apilamiento (debajo del botón pero encima del contenido) */
         width: 100%;
+        transition: transform 0.1s ease; /* Movido aquí para consistencia */
     }
 
     .logo-container{
@@ -224,6 +226,8 @@ h1 {
     /* Elimina el margen izquierdo en móvil */
     .contenido-principal {
         margin-left: 0;
+        width: 100%; /* Aseguramos ancho completo */
+        transition: transform 0.1s ease; /* Cambiado de margin a transform */
     }
     
     /* Muestra el menú al hacer clic en ☰ */
@@ -237,8 +241,8 @@ h1 {
     
     /* Desplaza el contenido al abrir el menú */
     .menu-toggle:checked ~ .contenido-principal {
-        margin-left: 100%;
-        width: 0vh;
+        transform: translateX(100%); /* Nuevo sistema de desplazamiento */
+        width: auto; /* Eliminado width: 0vh que causaba problemas */
     }
     
     /* Ajustes de tipografía para móviles */
