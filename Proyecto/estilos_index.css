@@ -211,7 +211,7 @@ h1 {
         transform: translateX(-100%); /* Mueve el menú fuera de la pantalla */
         top: 0; /* Ahora ocupa toda la altura */
         left: 0;
-        height: 100vh;
+        height: 100%;
         z-index: 98; /* Capa de apilamiento (debajo del botón pero encima del contenido) */
         width: 100%;
         transition: transform 0.1s ease; /* Movido aquí para consistencia */
