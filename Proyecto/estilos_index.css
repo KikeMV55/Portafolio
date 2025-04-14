@@ -215,6 +215,8 @@ h1 {
         z-index: 98; /* Capa de apilamiento (debajo del botón pero encima del contenido) */
         width: 100%;
         transition: transform 0.1s ease; /* Movido aquí para consistencia */
+        -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+        overscroll-behavior: contain; /* Evita que el contenido principal se desplace */
     }
 
     .logo-container{
@@ -243,6 +245,8 @@ h1 {
     .menu-toggle:checked ~ .contenido-principal {
         transform: translateX(100%); /* Nuevo sistema de desplazamiento */
         width: auto; /* Eliminado width: 0vh que causaba problemas */
+        overflow: hidden; /* Evita scroll durante la animación */
+        height: 100vh; /* Fija altura */
     }
     
     /* Ajustes de tipografía para móviles */
@@ -262,5 +266,9 @@ h1 {
         width: 80%; /* 90% del ancho del contenedor */
         max-width: 400px; /* Máximo 400px de ancho */
         margin-bottom: 5%;
+    }
+
+    html {
+        overflow-x: hidden; /* Elimina scroll horizontal fantasma */
     }
 }
