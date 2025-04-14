@@ -213,8 +213,8 @@ h1 {
     }
 
     .logo-container {
-        width: 50% !important;
-        margin-left: 25% !important;
+        width: 100% !important;
+        margin-left: 0 !important;
     }
     
     .contenido-principal {
