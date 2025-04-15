@@ -92,25 +92,30 @@ html, body{
 }
 
 .destacado{
+	width: 100%;
+}
+
+.platillo{
 	width: 35%;
 	margin-left: 10%;
 	margin-top: 5%;
-	margin-bottom: 5%;	
-}
-
-/*Pie de página*/
-.pie{
-	width: 100%;
-	height: auto;
-	background-color: #8d493a;
-}
-
-.pie table{
-	padding: 1%;
+	margin-bottom: 5%;
+	float: left;
 	text-align: center;
-	font-size: 15px;
-	color: #dfd3c3;
 }
-.pie table tr td{
-	width: 50%;
+
+.añadir{
+	margin-top: 2%;
+	border: 2px solid;
+	border-radius: 50px;
+	padding: 3%;
+	font-size: 20px;
+	background-color: #8d493a;
+	color: #dfd3c3;
+	font-weight: bold;
+}
+
+.añadir:hover{
+	color: #8d493a;
+	background-color: #dfd3c3;
 }
