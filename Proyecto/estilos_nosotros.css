@@ -65,59 +65,87 @@ html, body{
 	color: #dfd3c3;
 }
 
-.central{
+/*.central{
 	background-color: #f8ede3;
-	height: 100%;  /* Misma altura que .lista */
+	height: 100%;  /* Misma altura que .lista 
 	margin: 0%;
     width: 100%;
     float: left;
     position: relative;
-	overflow-y: auto; /* Scroll si el contenido es largo */
-}
+	overflow-y: auto; /* Scroll si el contenido es largo 
+}*/
 
 .prueba{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
-.central{
-	background-color: #f8ede3;
-	height: 100vh;  /* Misma altura que .lista */
-	margin: 0%;
+.central {
+    background-color: #f8ede3;
+    height: 100vh;
     width: 100%;
-    /*float: left;*/
-    position: relative;
-	overflow-y: auto; /* Scroll si el contenido es largo */
-
+    overflow-y: auto;
     display: flex;
-    flex-direction: space-between;
-    justify-content: center; /* Centra horizontalmente */
+    justify-content: space-evenly; /* Menos separación que space-between */
     align-items: center;
-}
-.central a{
-    margin: 2%;
-    padding: 4%;
-    flex: 1;
-    text-decoration: none;
-    width: 25%;
-    height: 70%;
+    flex-wrap: wrap;
+    padding: 2%;
+    gap: 10px; /* Menor separación */
 }
 
-.central a:hover{
-    border-radius: 10%;
-    transform: scale(1.1);
-    margin: 2%;
-    padding: 4%;
+/* Tarjetas */
+.info, .res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px; /* Más alargado */
+    width: 42%;
+    background-color: #f8ede3;
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Efecto hover */
+.info:hover, .res:hover {
+    transform: scale(1.05);
     background-color: #dfd3c3;
+}
+
+/* Estilos del enlace */
+.info a, .res a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
     color: #8d493a;
 }
-.central h2{
+
+/* Imagen */
+.info img, .res img {
+    object-fit: contain;
+    height: 60%;
+    width: 80%;
+}
+
+/* Título */
+.info h2, .res h2 {
+    margin: 10px 0;
+    font-size: 2rem; /* Más grande */
     color: #8d493a;
-    font-size: 4vh;
-    padding: 3%;
-    text-align: center; 
 }
-.central img{
-    width: 32vh;
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .info, .res {
+        width: 80%;
+
+    }
 }
+
 
