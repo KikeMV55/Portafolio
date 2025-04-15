@@ -1,0 +1,170 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body{
+	height: 100%;
+}
+
+#logo{
+	padding: 5%;
+}
+
+.encabezado{
+    width: 100%;
+	height: 13vh;
+    background-color: #dfd3c3;
+    display: flex; /*Permite ajustar los elementos dentro de un contendor*/
+    justify-content: center; /* Distribuir los botones equitativamente y el logo a la izquierda*/
+    align-items: center; /*Alinea verticalmente los elementos*/
+    box-sizing: border-box;
+}
+
+.caja{
+	display: flex;
+    height: 100%;
+}
+
+.lista{
+	list-style-type: none;
+	height: 100%;  /* Ocupará el 100% de .caja */
+    width: 15%;
+    padding: 0%;
+    margin: 0%;
+    background-color: #dfd3c3;
+	display: flex;          /* Activa Flexbox */
+	flex-direction: column; /* Apila los elementos verticalmente */
+	justify-content: space-evenly; /* Distribuye el espacio uniformemente */
+}
+
+.lista a{
+	display: block;
+	background-color: #dfd3c3;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #8d493a;
+	text-align: center;
+}
+
+.enlaces a:hover{
+	background-color: #8d493a;
+	color: #dfd3c3;
+}
+
+.activo a{
+	display: block;
+	background-color: #8d493a;
+	padding: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #dfd3c3;
+}
+
+.central{
+	background-color: #f8ede3;
+	height: 100%;  /* Misma altura que .lista */
+	margin: 0%;
+    width: 100%;
+    float: left;
+    position: relative;
+	overflow-y: auto; /* Scroll si el contenido es largo */
+}
+
+.prueba{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.blog-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+}                                                               
+.faq {
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.faq h2 {
+    color: #8d493a;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.pregunta {
+    margin-bottom: 15px;
+}
+
+.pregunta h3 {
+    font-size: 1.2rem;
+    color: #4d3c33;
+    margin-bottom: 5px;
+}
+
+.pregunta p {
+    font-size: 1rem;
+    color: #3a2e2b;
+}
+
+/* Comentarios */
+.comentarios {
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.comentarios h2 {
+    color: #8d493a;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.comentarios form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comentarios input,
+.comentarios textarea {
+    padding: 10px;
+    border: 2px solid #8d493a;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.comentarios button {
+    background-color: #8d493a;
+    color: #fff8f0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comentarios button:hover {
+    background-color: #a75c4b;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .blog-contenedor {
+        padding: 20px 10px;
+    }
+
+    .faq h2,
+    .comentarios h2 {
+        font-size: 1.5rem;
+    }
+}
