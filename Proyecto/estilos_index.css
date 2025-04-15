@@ -46,7 +46,7 @@ body {
     z-index: 95; /* Capa de apilamiento (encima del encabezado) */
     overflow-y: auto; /* Permite scroll si el menú es muy largo */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
