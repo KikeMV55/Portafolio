@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="leerforms.js" ></script>
+    <link rel="stylesheet" href="estilos_practica_2.css">
+    <title> Obtener datos desde formulario con JavaScript </title>
+    
+</head>
+<body>
+    <div id="titulo">
+        <h1> Registro de usuario </h1>
+    </div>
+    
+    <div id="form">
+        <form name="formulario">
+            <label for="user"> Nombre de usuario: </label>
+            <input type="text" name="user" id="user" placeholder="Usuario"><br/><br/>
+            <label for="pass"> Password: </label>
+            <input type="password" name="pass" id="pass"><br/><br/>
+            <label for="carrera"> Carrera: </label>
+            <select name="carrera" id="carrera">
+                <option value="ITI"> Ing. Tec. Información </option><br/><br/>
+                <option value="ITEM"> Ing. Telemática </option>
+            </select><br/><br/>
+            <label for="genero"> Género: </label><br/>
+            <input type="radio" name="genero" id="genero" value="f"> Femenino <br/>
+            <input type="radio" name="genero" id="genero" value="m"> Masculino <br/><br/>
+            <input type="checkbox" name="privacidad" id="privacidad">
+            <label for="privacidad"> Acepto los términos y condiciones de uso y privacidad </label><br/><br/>
+            <input type="button" name="envio" id="envio" value="Obtener datos" onclick="leer()">
+        </form>
+    </div>
+    
+    <div id="datos">
+        
+    </div>
+</body>
+</html>

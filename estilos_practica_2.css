@@ -1,0 +1,49 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#titulo{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 4px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#form{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: auto;
+    padding: 2%;
+    text-align: left;
+    margin-left: 25%;
+    border-radius: 4px;
+    margin-bottom: 5%;
+}
+
+#datos{
+    background-color: blanchedalmond;
+    width: 50%;
+    height: auto;
+    padding: 2%;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 4px;
+    margin-bottom: 5%;
+}
+
+#envio{
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    margin-left: 40%;
+    padding: 1%;
+}
+
+#envio:hover{
+    background-color: rgb(196, 161, 109);
+    cursor: pointer;
+}
