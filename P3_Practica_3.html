@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario sobre Cristiano Ronaldo</title>
+    <link rel="stylesheet" href="estilos_practica_3.css">
+    <!-- Librerías para PDF -->
+    <script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="jspdf/jspdf.js"></script>
+    <script type="text/javascript" src="jspdf/jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+    <script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+    <script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Cuestionario sobre Cristiano Ronaldo</h1>
+        <p>Responde estas 5 preguntas sobre CR7 para evaluar tus conocimientos.</p>
+        
+        <form id="formularioCuestionario">
+            <!-- Pregunta 1 -->
+            <label>1. ¿En qué año nació Cristiano Ronaldo?</label>
+            <input type="radio" name="p1" value="A"> 1987<br>
+            <input type="radio" name="p1" value="B"> 1985<br>
+            <input type="radio" name="p1" value="C"> 1989<br><br>
+            
+            <!-- Pregunta 2 -->
+            <label>2. ¿Con qué club ganó su primer Balón de Oro?</label>
+            <input type="radio" name="p2" value="A"> Real Madrid<br>
+            <input type="radio" name="p2" value="B"> Manchester United<br>
+            <input type="radio" name="p2" value="C"> Juventus<br><br>
+            
+            <!-- Pregunta 3 -->
+            <label>3. ¿Cuántos Balones de Oro tiene Cristiano Ronaldo?</label>
+            <input type="radio" name="p3" value="A"> 6<br>
+            <input type="radio" name="p3" value="B"> 7<br>
+            <input type="radio" name="p3" value="C"> 5<br><br>
+            
+            <!-- Pregunta 4 -->
+            <label>4. ¿Cuál es el país de origen de Cristiano Ronaldo?</label>
+            <input type="radio" name="p4" value="A"> Brasil<br>
+            <input type="radio" name="p4" value="B"> Portugal<br>
+            <input type="radio" name="p4" value="C"> España<br><br>
+            
+            <!-- Pregunta 5 -->
+            <label>5. ¿En qué posición juega principalmente Cristiano Ronaldo?</label>
+            <input type="radio" name="p5" value="A"> Mediocampista<br>
+            <input type="radio" name="p5" value="B"> Delantero<br>
+            <input type="radio" name="p5" value="C"> Defensa<br><br>
+            
+            <div class="botones">
+                <input type="button" id="comprobar" value="Comprobar Resultados">
+                <input type="button" id="generarPdf" value="Generar PDF">
+            </div>
+            
+            <div id="resultados">
+                <div id="mensaje"></div>
+                <iframe id="pdfIframe" style="width:100%; height:500px; margin-top:20px; display:none;"></iframe>
+            </div>
+            
+            <div>
+                <canvas id="grafico" width="400" height="200"></canvas>
+            </div>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
