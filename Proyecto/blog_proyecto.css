@@ -182,6 +182,54 @@ body{
 .comentarios button:hover {
     background-color: #a75c4b;
 }
+
+/* Estilo para el contenedor de cada comentario */
+.comentario {
+	background-color: #fff8f0;
+	padding: 15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* Cabecera del comentario: nombre y fecha */
+.comentario-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.comentario .fecha {
+	font-size: 0.9rem;
+	color: #8d493a;
+}
+
+/* Estilo para el texto del comentario */
+.texto-comentario {
+	font-size: 1rem;
+	color: #3a2e2b;
+}
+
+/* Estilo para el botón eliminar */
+.eliminar-btn {
+	background-color: #d9534f;
+	color: #fff;
+	border: none;
+	padding: 6px 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: background-color 0.3s ease;
+	margin-left: auto;
+}
+
+.eliminar-btn:hover {
+	background-color: #c9302c;
+}
+
+
 /*Aquí termina el main*/
 
 
