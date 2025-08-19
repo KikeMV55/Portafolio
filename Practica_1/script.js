@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', checkScreenSize);
     
     // Marcar página activa (se mantiene igual)
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'Practica_1/index.html';
     const links = document.querySelectorAll('.nav-link, .submenu a');
     
     links.forEach(link => {
@@ -231,4 +231,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
