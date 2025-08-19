@@ -394,7 +394,7 @@ body {
 /* Hero */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/banner2.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Practica_1/imagenes/banner2.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -712,15 +712,15 @@ body {
   
   /* Empareja imagen con su texto */
   .tabla-sin-bordes tbody td:nth-child(1)::before{
-    background-image: url(imagenes/dis1.png);
+    background-image: url(Practica_1/imagenes/dis1.png);
     height: 300px;
   }
   .tabla-sin-bordes tbody td:nth-child(2)::before{
-    background-image: url(imagenes/dis2.png);
+    background-image: url(Practica_1/imagenes/dis2.png);
     height: 300px;
   }
   .tabla-sin-bordes tbody td:nth-child(3)::before{
-    background-image: url(imagenes/dis3.png);
+    background-image: url(Practica_1/imagenes/dis3.png);
     height: 300px;
   }
 
@@ -831,4 +831,5 @@ body {
     .galeria h3 {
         font-size: 1.5rem;
     }
+
 }
